@@ -1,3 +1,0 @@
-%USERPROFILE%\AppData\Local\Microsoft\Outlook
-
---paste to the local\..\Outlook folder

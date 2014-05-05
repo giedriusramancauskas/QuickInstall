@@ -1,3 +1,0 @@
-%USERPROFILE%\AppData\Roaming\Microsoft\Outlook
-
---paste to the roaming\..\Outlook folder
