@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Root xmlns="WorkingHours.xsd">
+	<WorkHoursVersion1>
+		<TimeZone>
+			<Bias>0</Bias>
+			<Standard>
+				<Bias>0</Bias>
+				<ChangeDate>
+					<Time>02:00:00</Time>
+					<Date>0000/10/05</Date>
+					<DayOfWeek>0</DayOfWeek>
+				</ChangeDate>
+			</Standard>
+			<DaylightSavings>
+				<Bias>-60</Bias>
+				<ChangeDate>
+					<Time>01:00:00</Time>
+					<Date>0000/03/05</Date>
+					<DayOfWeek>0</DayOfWeek>
+				</ChangeDate>
+			</DaylightSavings>
+			<Name>GMT Standard Time</Name>
+		</TimeZone>
+		<TimeSlot>
+			<Start>09:00:00</Start>
+			<End>17:30:00</End>
+		</TimeSlot>
+		<WorkDays>Monday Tuesday Wednesday Thursday Friday</WorkDays>
+	</WorkHoursVersion1>
+</Root>

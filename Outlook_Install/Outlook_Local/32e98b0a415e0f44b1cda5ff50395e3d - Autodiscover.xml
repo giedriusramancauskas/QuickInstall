@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+  <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+    <User>
+      <DisplayName>Ramancauskas, Giedrius</DisplayName>
+      <LegacyDN>/o=Mail/ou=IN/cn=Recipients/cn=ramancauskasg</LegacyDN>
+      <AutoDiscoverSMTPAddress>giedrius.ramancauskas@cgi.com</AutoDiscoverSMTPAddress>
+      <DeploymentId>32af8b9b-ffa8-49f7-9cc4-428fbccc0a3f</DeploymentId>
+    </User>
+    <Account>
+      <AccountType>email</AccountType>
+      <Action>settings</Action>
+      <Protocol>
+        <Type>EXCH</Type>
+        <Server>casarray01.groupinfra.com</Server>
+        <ServerDN>/o=Mail/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=casarray01.groupinfra.com</ServerDN>
+        <ServerVersion>7383807B</ServerVersion>
+        <MdbDN>/o=Mail/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=casarray01.groupinfra.com/cn=Microsoft Private MDB</MdbDN>
+        <PublicFolderServer>SE-EX020.groupinfra.com</PublicFolderServer>
+        <AD>UK-DC013.groupinfra.com</AD>
+        <ASUrl>https://mail.global.logica.com/ews/exchange.asmx</ASUrl>
+        <EwsUrl>https://mail.global.logica.com/ews/exchange.asmx</EwsUrl>
+        <EcpUrl>https://mail.global.logica.com/ecp/</EcpUrl>
+        <EcpUrl-um>?p=customize/voicemail.aspx&amp;exsvurl=1</EcpUrl-um>
+        <EcpUrl-aggr>?p=personalsettings/EmailSubscriptions.slab&amp;exsvurl=1</EcpUrl-aggr>
+        <EcpUrl-mt>PersonalSettings/DeliveryReport.aspx?exsvurl=1&amp;IsOWA=&lt;IsOWA&gt;&amp;MsgID=&lt;MsgID&gt;&amp;Mbx=&lt;Mbx&gt;</EcpUrl-mt>
+        <EcpUrl-ret>?p=organize/retentionpolicytags.slab&amp;exsvurl=1</EcpUrl-ret>
+        <OOFUrl>https://mail.global.logica.com/ews/exchange.asmx</OOFUrl>
+        <UMUrl>https://mail.global.logica.com/ews/UM2007Legacy.asmx</UMUrl>
+        <OABUrl>https://mail.global.logica.com/oab/07b3ceb3-6e48-44b8-bb87-5f6370b1c3c2/</OABUrl>
+      </Protocol>
+      <Protocol>
+        <Type>WEB</Type>
+        <Internal>
+          <OWAUrl AuthenticationMethod="Basic, Ntlm, WindowsIntegrated">https://mail.global.logica.com/owa/</OWAUrl>
+          <Protocol>
+            <Type>EXCH</Type>
+            <ASUrl>https://mail.global.logica.com/ews/exchange.asmx</ASUrl>
+          </Protocol>
+        </Internal>
+        <External>
+          <OWAUrl AuthenticationMethod="Fba">https://mail.global.logica.com/owa/</OWAUrl>
+          <Protocol>
+            <Type>EXPR</Type>
+            <ASUrl>https://mail.global.logica.com/ews/exchange.asmx</ASUrl>
+          </Protocol>
+        </External>
+      </Protocol>
+    </Account>
+  </Response>
+</Autodiscover>

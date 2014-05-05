@@ -1,0 +1,3 @@
+%USERPROFILE%\AppData\Roaming\Microsoft
+
+--paste to the microsoft folder
