@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<UserConfiguration>
+	<Info version="Outlook.14"/>
+	<Data>
+		<e k="18-piCreateContactsForOneOffs" v="3-True"/>
+		<e k="18-piImportedContactNickNames" v="3-True"/>
+		<e k="18-OLPrefsVersion" v="9-1"/>
+	</Data>
+</UserConfiguration>
