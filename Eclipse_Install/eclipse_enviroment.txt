@@ -1,0 +1,77 @@
+SETTING UP ECLIPSE ENVIROMENT
+Installing the ICS-SE Java formatter
+1.	Download eclipse.format.xml to your local computer
+2.	In Eclipse, select Eclipse | Preferences | Java | Code Style | Formatter
+3.	Click “Import” and choose the file you just downloaded. The “active profile” should now change to “ICS-SE”.  Click “OK”
+4.	Now when you are editing Java source code, you can invoke Source | Format to reformat the Java source code according to our class conventions.
+
+INSTALL THE WEB TOOLS EXTENSION
+This provides better editing support for HTML, CSS, and XML.
+Install the Web Tools Extension:
+1.	Select Help | Install New Software…In Work with:, select “Kepler – http://download.eclipse.org/releases/kepler&#8221;
+2.	Scroll down through the list of packages, and click the triangle to expand the “Web, XML, Java EE and OSGi Enterprise Development” section.
+3.	Now select three packages to install:
+•	Eclipse Java Web Developer Tools
+•	Eclipse Web Developer Tools
+•	Eclipse XML Developer Tools.
+•	Click “Next” to continue with the installation.
+•	Follow the prompts to finish the installation.
+When you are finished and have restarted Eclipse, you can go to About Eclipse | Installation Details to verify that it’s been installed
+
+INSTALL WORD-WRAP PLUGIN
+For editing HTML, it is very useful to have “soft” line returns. The Eclipse Word-Wrap Plugin supports this feature in all Eclipse editors.
+Follow the instructions in the above link (http://dev.cdhq.de/eclipse/word-wrap/)  for installation into Kepler 4.3.
+INSTALL (UPDATE SITE)
+Please select the appropriate update site for your Eclipse version to download the word wrap plug-in and the line numbering ruler fix (In Eclipse: Help > Install New Software...):
+Eclipse Indigo 3.7:  http://dev.cdhq.de/eclipse/updatesite/indigo/
+Eclipse Juno 4.2 + Kepler 4.3:  http://dev.cdhq.de/eclipse/updatesite/kepler/
+For further information about the fixed line numbering ruler in the org.eclipse.jface.text plug-in: See the project website (http://dev.cdhq.de/eclipse/linenumberrulercolumn/)
+To remove the plug-ins and use your standard org.eclipse.jface.text plug-in open the "About Eclipse..." > "Installation Dialog" window, select the installed feature and click on "Uninstall...".
+If successfully installed, then “Toggle Word Wrap” will be an option in the Edit menu
+
+INSTALL CHECKSTYLE
+Like the formatter, Checkstyle helps ensure that your code implements our class coding conventions.
+Follow the instructions at http://eclipse-cs.sourceforge.net/downloads.html to install the Checkstyle Plugin for Eclipse.  You can install both the “Eclipse Checkstyle Plugin” as well as the “Extension for EclipseCS Plugin with Additional Checks”.
+•	To verify, go to About Eclipse | Installation Details.  The window above shows the Checkstyle plugin.
+INSTALL THE ICS-SE CHECKSTYLE RULESET
+•	This task configures Checkstyle to our class’s specific coding conventions.
+Note: if you are updating checkstyle.xml rather than installing it for the first time, the easiest way is to simply delete all current projects from Eclipse, then delete the current checkstyle.xml configuration, then download and install the new version following the instructions below.
+•	Download checkstyle.xml to your local computer.
+•	In Eclipse, select Eclipse | Preferences | Checkstyle, then click “New..” to bring up the “Check Configuration Properties” window.  Select “External Configuration File” as the Type,  provide “ICS-SE” as the Name, and browse to the file to fill the Location field.
+•	Now click “OK” to load that configuration and return to the Checkstyle Preferences window. In that window, select the ICS-SE configuration and click “Set as Default”.
+•	Click OK to save these changes.  Now the Project Properties dialog will include a Checkstyle pane where you can activate, deactivate, and customize the application of Checkstyle
+CONFIGURE EDITORS
+We never want tabs in our files.  We always want indentation to be two spaces.  The standard file width is 120 characters.  Here’s what you need to do to get that in Eclipse for the files we’ll be working on.
+In Eclipse | Preferences | General | Editors | Text Editors:
+•	Check “Insert spaces for tabs”
+•	Check “Show print margin”, and set the print margin column to 120.
+•	Click “Apply”
+In Eclipse | Preferences | Ant | Editor | Formatter:
+•	Set Tab Size: to 2
+•	Uncheck “Use tab character instead of spaces”
+•	Set Maximum Line Width to 120.
+•	Click “Apply”.
+In Eclipse | Preferences | Web | CSS Files | Editor:
+•	Set Line Width to 120.
+•	Check “Indent using spaces”
+•	Set indentation size to 2.
+•	Click “Apply”.
+In Eclipse | Preferences | Web | HTML Files | Editor:
+•	Set Line Width to 120.
+•	Check “Indent using spaces”
+•	Set indentation size to 2.
+•	Click “Apply”.
+In Eclipse | Preferences | XML | XML Files | Editor:
+•	Set Line Width to 120.
+•	Check “Indent using spaces”
+•	Set indentation size to 2.
+•	Click “Apply”.
+Now click “OK” to exit the Preferences dialog.
+CONFIGURE FILE ASSOCIATIONS
+We want to make sure the right type of editor comes up when we double click on a file name in an Eclipse project.
+In Eclipse | General | Editors | File Associations:
+•	Select the “*.html” file type in the upper window, then select “HTML Editor” in the lower window and click “Default”.
+•	Click “Add”, type “*.xml” as the file type, click “OK”.  In the lower window, select “XML Editor” and click “Default”.
+•	Click “Add”, type “*.md” as the file type, click “OK”.  In the lower window, click “Add”, select “Text Editor”, and click “OK”.
+ENABLE “REFRESH USING NATIVE HOOKS”
+During Fall, 2013, we found that Play Framework integration with Eclipse was dramatically improved if the workspace option “Refresh using native hooks” was enabled.   Find this under General | Workspace, and enable it.
