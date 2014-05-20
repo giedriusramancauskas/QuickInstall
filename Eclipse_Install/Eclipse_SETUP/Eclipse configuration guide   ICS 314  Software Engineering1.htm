@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Eclipse configuration guide | ICS 314: Software Engineering</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://ics314f13.wordpress.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://s1.wp.com/wp-content/themes/pub/twentythirteen/js/html5.js?m=1394055255g"></script>
+	<![endif]-->
+	<link rel="alternate" type="application/rss+xml" title="ICS 314: Software Engineering &raquo; Feed" href="http://ics314f13.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ICS 314: Software Engineering &raquo; Comments Feed" href="http://ics314f13.wordpress.com/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/_static/??-eJx9jcEKwjAQRH/IuLTaVg/it4R1sUmzydLdIv69acGDIL3NDO8x8BKHJRtlA16cpOUZsoJySPSWuURC+21HVD3Afy2FiRQimXic3Nb2cCwz1Z3F20owPYKnRFyxPY2l/1prHOvXdnPnW3O6Dm17vnRd/AC6wVDr' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-fonts-css'  href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='http://s0.wp.com/_static/??/wp-content/mu-plugins/genericons/genericons.css,/wp-content/themes/pub/twentythirteen/style.css?m=1398101961j' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentythirteen-ie-css'  href='http://s1.wp.com/wp-content/themes/pub/twentythirteen/css/ie.css?m=1395207756g&#038;ver=2013-07-18' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-4' href='http://s1.wp.com/_static/??-eJx9j90KwjAMhV/IGuZE2YX4LF0Xs0rblDal7O0tU/xB2N05Sc5HDtSoDAfBICAzeswQywhS22CR2SZBDGByhiyLQ1WjYb9vfgcWAott4fwWz8UX0hcVXSHbbghZOTZaLIcfo25O27QVTTg6piZp/eRj/0KvCvMRyPGo3Ra12olQ8ook5imhntYGV3/p+mHo++5wPt0fwXlsNQ==' type='text/css' media='all' />
+<script type='text/javascript' src='http://s0.wp.com/_static/??-eJyFzVEKwjAMgOEL2bUbCr6IZ6k1jsQlrU3r0NPbgYKCsKdA8pHfzsmEKAWkWFLL8YQTmKqQ/dh2BuUSO9KNbQ4lTPUMukC6VciP91gFhnHMvkDHKB/8VU1RC4NqS/65/qZQ7gjzKiMoyYeryaD4XL4e+dBvndvt+8EN9AIo5lvB'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ics314f13.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ics314f13.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Integrated development environments' href='http://ics314f13.wordpress.com/modules/integrated-development-environments/' />
+<link rel='next' title='A08: Install Eclipse' href='http://ics314f13.wordpress.com/modules/integrated-development-environments/a08-install-eclipse/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://ics314f13.wordpress.com/modules/integrated-development-environments/eclipse-configuration-guide/' />
+<link rel='shortlink' href='http://wp.me/P3NUnx-1P' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fics314f13.wordpress.com%2Fmodules%2Fintegrated-development-environments%2Feclipse-configuration-guide%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fics314f13.wordpress.com%2Fmodules%2Fintegrated-development-environments%2Feclipse-configuration-guide%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Eclipse configuration guide" />
+<meta property="og:url" content="http://ics314f13.wordpress.com/modules/integrated-development-environments/eclipse-configuration-guide/" />
+<meta property="og:description" content="Download and install Eclipse Download and install Eclipse 4.3 (Kepler) from Choose “Eclipse IDE for Java Developers”. Do not install it into a file path containing spaces, such as (on Windows) c:\P..." />
+<meta property="article:published_time" content="2013-08-21T02:01:42+00:00" />
+<meta property="article:modified_time" content="2013-10-21T04:00:16+00:00" />
+<meta property="article:author" content="http://ics314f13.wordpress.com/author/philipmjohnson/" />
+<meta property="og:site_name" content="ICS 314: Software Engineering" />
+<meta property="og:image" content="http://ics314f13.files.wordpress.com/2013/08/refresh-using-native-hooks.png" />
+<meta property="og:image" content="http://ics314f13.files.wordpress.com/2013/08/toggle-word-wrap2.png" />
+<meta property="og:image" content="http://ics314f13.files.wordpress.com/2013/08/checkstyle-project-properties.png" />
+<meta property="og:image" content="http://ics314f13.files.wordpress.com/2013/08/checkstyle-preferences.png" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:image" content="http://ics314f13.files.wordpress.com/2013/08/eclipse-formatter-window.png?w=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="http://s0.wp.com/i/webclip.png?m=1391188133g" />
+<link rel='openid.server' href='http://ics314f13.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://ics314f13.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://ics314f13.wordpress.com/osd.xml" title="ICS 314: Software Engineering" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+<meta name="application-name" content="ICS 314: Software Engineering" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="University of Hawaii, Fall 2013" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://ics314f13.wordpress.com/feed/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="Eclipse configuration guide | ICS 314: Software Engineering on WordPress.com" />
+<meta name="description" content="Download and install Eclipse Download and install Eclipse 4.3 (Kepler) from http://www.eclipse.org/downloads/. Choose “Eclipse IDE for Java Developers”. Do not install it into a file path containing spaces, such as (on Windows) c:\Program Files. Instead, install it in c:\eclipse, c:\ics314\eclipse, or whatever. If you already have an older version of Eclipse installed, delete your ~/workspace/&hellip;" />
+	<style type="text/css" id="twentythirteen-header-css">
+			.site-header {
+			background: url(http://ics314f13.wordpress.com/wp-content/themes/pub/twentythirteen/images/headers/diamond.png) no-repeat scroll top;
+			background-size: 1600px auto;
+		}
+		</style>
+	<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+
+<body class="page page-id-113 page-child parent-pageid-110 page-template-default mp6 single-author highlander-enabled highlander-light">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="http://ics314f13.wordpress.com/" title="ICS 314: Software Engineering" rel="home">
+				<h1 class="site-title">ICS 314: Software Engineering</h1>
+				<h2 class="site-description">University of Hawaii, Fall 2013</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<h3 class="menu-toggle">Menu</h3>
+					<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+					<div class="menu-mymenu-container"><ul id="menu-mymenu" class="nav-menu"><li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://ics314f13.wordpress.com/">Home</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26"><a>Course Info</a>
+<ul class="sub-menu">
+	<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="http://ics314f13.wordpress.com/course-info/preparation/">Preparation</a></li>
+	<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://ics314f13.wordpress.com/course-info/modules/">Module List</a></li>
+	<li id="menu-item-1028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028"><a href="http://ics314f13.wordpress.com/course-info/course-rhythm/">Course rhythm</a></li>
+	<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://ics314f13.wordpress.com/course-info/grading/">Grading</a></li>
+	<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="http://ics314f13.wordpress.com/course-info/how-to-watch-screencasts-the-smart-way/">How to watch screencasts the smart way</a></li>
+	<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="http://ics314f13.wordpress.com/course-info/the-prime-directives/">The Prime Directives</a></li>
+	<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="http://ics314f13.wordpress.com/course-info/student-learning-objectives/">Student Learning Objectives</a></li>
+	<li id="menu-item-1298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1298"><a href="http://ics314f13.wordpress.com/course-info/portfolios/">Portfolios</a></li>
+	<li id="menu-item-1326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1326"><a>WODs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184"><a href="http://ics314f13.wordpress.com/course-info/wod/">Workout of the Day (WOD)</a></li>
+		<li id="menu-item-1324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1324"><a href="http://ics314f13.wordpress.com/course-info/in-class-wod-results/">In-class WOD results</a></li>
+		<li id="menu-item-312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-312"><a href="http://ics314f13.wordpress.com/course-info/hebs/">HEBS (Homework, Exercise, Breakfast, Sleep)</a></li>
+		<li id="menu-item-1318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1318"><a href="http://ics314f13.wordpress.com/course-info/practice-wod-repetitions/">Practice WOD repetitions</a></li>
+		<li id="menu-item-1325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1325"><a href="http://ics314f13.wordpress.com/course-info/wod-end-of-semester-reflection/">WOD End-of-Semester Reflection</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49"><a>Modules</a>
+<ul class="sub-menu">
+	<li id="menu-item-633" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-633"><a>Part One</a>
+	<ul class="sub-menu">
+		<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="http://ics314f13.wordpress.com/modules/introduction/">Introduction</a></li>
+		<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="http://ics314f13.wordpress.com/modules/professional-persona/">Professional Persona</a></li>
+		<li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-142"><a href="http://ics314f13.wordpress.com/modules/integrated-development-environments/">Integrated development environments</a></li>
+		<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="http://ics314f13.wordpress.com/modules/coding-standards/">Coding Standards</a></li>
+		<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="http://ics314f13.wordpress.com/modules/java-coding/">Java Coding</a></li>
+	</ul>
+</li>
+	<li id="menu-item-634" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-634"><a>Part Two</a>
+	<ul class="sub-menu">
+		<li id="menu-item-369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="http://ics314f13.wordpress.com/modules/ui-basics/">UI Basics</a></li>
+		<li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><a href="http://ics314f13.wordpress.com/modules/ui-frameworks/">UI Frameworks</a></li>
+		<li id="menu-item-564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-564"><a href="http://ics314f13.wordpress.com/modules/web-application-frameworks/">Web Application Frameworks</a></li>
+		<li id="menu-item-632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-632"><a href="http://ics314f13.wordpress.com/modules/cloud-hosting/">Cloud-based hosting</a></li>
+	</ul>
+</li>
+	<li id="menu-item-721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-721"><a>Part Three</a>
+	<ul class="sub-menu">
+		<li id="menu-item-722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-722"><a href="http://ics314f13.wordpress.com/modules/dynamic-web-applications/">Dynamic Web Applications</a></li>
+		<li id="menu-item-880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-880"><a href="http://ics314f13.wordpress.com/modules/dynamic-web-applications-part-2/">Dynamic Web Applications, Part 2</a></li>
+		<li id="menu-item-965" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-965"><a href="http://ics314f13.wordpress.com/modules/cloud-based-deployment/">Cloud-based deployment</a></li>
+		<li id="menu-item-733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-733"><a href="http://ics314f13.wordpress.com/modules/startup-weekend/">Startup Weekend</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1067" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1067"><a>Part Four</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1068"><a href="http://ics314f13.wordpress.com/modules/authentication/">Authentication and Authorization</a></li>
+		<li id="menu-item-1150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1150"><a href="http://ics314f13.wordpress.com/modules/model-design/">Model Design</a></li>
+		<li id="menu-item-1197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1197"><a href="http://ics314f13.wordpress.com/modules/model-implementation/">Model Implementation</a></li>
+		<li id="menu-item-1266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1266"><a href="http://ics314f13.wordpress.com/modules/testing/">Testing</a></li>
+		<li id="menu-item-1230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1230"><a href="http://ics314f13.wordpress.com/modules/final-exam/">Final Exam: Surferpedia</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="http://ics314f13.wordpress.com/course-info/calendar/">Calendar</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="https://groups.google.com/d/forum/ics314f13">Discussion Group</a></li>
+</ul></div>					<form role="search" method="get" class="search-form" action="http://ics314f13.wordpress.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+						
+				<article id="post-113" class="post-113 page type-page status-publish hentry">
+					<header class="entry-header">
+						
+						<h1 class="entry-title">Eclipse configuration guide</h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<h2>Download and install Eclipse</h2>
+<p>Download and install Eclipse 4.3 (Kepler) from <a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/</a>. Choose “Eclipse IDE for Java Developers”.</p>
+<p>Do not install it into a file path containing spaces, such as (on Windows) c:\Program Files. Instead, install it in c:\eclipse, c:\ics314\eclipse, or whatever.</p>
+<p><strong>If you already have an older version of Eclipse installed,</strong> delete your ~/workspace/ directory. Eclipse 4.3 has a <a href="http://www.eclipse.org/forums/index.php/t/489559/">bug</a> that causes auto-completion to not work when the libraries in older versions of the workspace directory are found on startup.  The simple solution: delete the workspace directory.  You will have to re-import your projects, but this guarantees your environment is OK.</p>
+<h2>Install the ICS-SE Java formatter</h2>
+<p>This simplifies the creation of Java programs that satisfy our formatting conventions.</p>
+<p>Download <a href="https://ics-software-engineering.googlecode.com/svn/trunk/configfiles/eclipse.format.xml">eclipse.format.xml</a> to your local computer.</p>
+<p>In Eclipse, select Eclipse | Preferences | Java | Code Style | Formatter to bring up the following window:</p>
+<p><a href="http://ics314f13.files.wordpress.com/2013/08/eclipse-formatter-window.png"><img class="alignnone size-medium wp-image-120" alt="eclipse-formatter-window" src="http://ics314f13.files.wordpress.com/2013/08/eclipse-formatter-window.png?w=300&#038;h=293" width="300" height="293" /></a></p>
+<p>Now click &#8220;Import&#8221; and choose the file you just downloaded. The &#8220;active profile&#8221; should now change to &#8220;ICS-SE&#8221;.  Click &#8220;OK&#8221;.</p>
+<p>Now when you are editing Java source code, you can invoke Source | Format to reformat the Java source code according to our class conventions.</p>
+<h2>Install the Web Tools Extension</h2>
+<p>This provides better editing support for HTML, CSS, and XML.</p>
+<p>Install the Web Tools Extension:</p>
+<ul>
+<li>Select Help | Install New Software&#8230;</li>
+<li>In Work with:, select &#8220;Kepler &#8211; <a href="http://download.eclipse.org/releases/kepler&#038;#8221" rel="nofollow">http://download.eclipse.org/releases/kepler&#038;#8221</a>;</li>
+<li>Scroll down through the list of packages, and click the triangle to expand the &#8220;Web, XML, Java EE and OSGi Enterprise Development&#8221; section.</li>
+<li>Now select three packages to install:
+<ul>
+<li>Eclipse Java Web Developer Tools</li>
+<li>Eclipse Web Developer Tools</li>
+<li>Eclipse XML Developer Tools.</li>
+</ul>
+</li>
+<li>Click &#8220;Next&#8221; to continue with the installation.</li>
+<li>Follow the prompts to finish the installation.</li>
+</ul>
+<p>When you are finished and have restarted Eclipse, you can go to About Eclipse | Installation Details to verify that it&#8217;s been installed.  Here&#8217;s the installation details window showing the installation of the tools:</p>
+<p><a href="http://ics314f13.files.wordpress.com/2013/08/eclipse-installation-details.png"><img class="alignnone size-medium wp-image-119" alt="eclipse-installation-details" src="http://ics314f13.files.wordpress.com/2013/08/eclipse-installation-details.png?w=300&#038;h=144" width="300" height="144" /></a></p>
+<h2>Install Word-Wrap Plugin</h2>
+<p>For editing HTML, it is very useful to have &#8220;soft&#8221; line returns. The Eclipse <a href="http://dev.cdhq.de/eclipse/word-wrap/">Word-Wrap Plugin</a> supports this feature in all Eclipse editors.</p>
+<p>Follow the instructions in the above link for installation into Kepler 4.3.</p>
+<p>If successfully installed, then &#8220;Toggle Word Wrap&#8221; will be an option in the Edit menu:</p>
+<p><a href="http://ics314f13.files.wordpress.com/2013/08/toggle-word-wrap2.png"><img class="alignnone size-medium wp-image-234" alt="toggle-word-wrap2" src="http://ics314f13.files.wordpress.com/2013/08/toggle-word-wrap2.png?w=191&#038;h=300"   /></a></p>
+<h2>Install Checkstyle</h2>
+<p>Like the formatter, Checkstyle helps ensure that your code implements our class coding conventions.</p>
+<p>Follow the instructions at <a href="http://eclipse-cs.sourceforge.net/downloads.html">http://eclipse-cs.sourceforge.net/downloads.html </a>to install the Checkstyle Plugin for Eclipse.  You can install both the &#8220;Eclipse Checkstyle Plugin&#8221; as well as the &#8220;Extension for EclipseCS Plugin with Additional Checks&#8221;.</p>
+<p>To verify, go to About Eclipse | Installation Details.  The window above shows the Checkstyle plugin.</p>
+<h2>Install the ICS-SE Checkstyle Ruleset</h2>
+<p>This task configures Checkstyle to our class&#8217;s specific coding conventions.</p>
+<p><em>Note: if you are updating checkstyle.xml rather than installing it for the first time, the easiest way is to simply delete all current projects from Eclipse, then delete the current checkstyle.xml configuration, then download and install the new version following the instructions below.</em></p>
+<p>Download <a href="https://ics-software-engineering.googlecode.com/svn/trunk/configfiles/checkstyle.xml">checkstyle.xml</a> to your local computer.</p>
+<p>In Eclipse, select Eclipse | Preferences | Checkstyle, then click &#8220;New..&#8221; to bring up the &#8220;Check Configuration Properties&#8221; window.  Select &#8220;External Configuration File&#8221; as the Type,  provide &#8220;ICS-SE&#8221; as the Name, and browse to the file to fill the Location field. The resulting dialog box should look like this:</p>
+<p><a href="http://ics314f13.files.wordpress.com/2013/08/ics-se-checkstyle-configuration.png"><img class="alignnone size-medium wp-image-122" alt="ics-se-checkstyle-configuration" src="http://ics314f13.files.wordpress.com/2013/08/ics-se-checkstyle-configuration.png?w=300&#038;h=234" width="300" height="234" /></a></p>
+<p>Now click &#8220;OK&#8221; to load that configuration and return to the Checkstyle Preferences window. In that window, select the ICS-SE configuration and click &#8220;Set as Default&#8221;. The resulting dialog box should look like this:</p>
+<p><a href="http://ics314f13.files.wordpress.com/2013/08/checkstyle-preferences.png"><img class="alignnone size-medium wp-image-123" alt="checkstyle-preferences" src="http://ics314f13.files.wordpress.com/2013/08/checkstyle-preferences.png?w=289&#038;h=300" width="289" height="300" /></a></p>
+<p>Click OK to save these changes.  Now the Project Properties dialog will include a Checkstyle pane where you can activate, deactivate, and customize the application of Checkstyle, as illustrated here:</p>
+<p><a href="http://ics314f13.files.wordpress.com/2013/08/checkstyle-project-properties.png"><img class="alignnone size-medium wp-image-124" alt="checkstyle-project-properties" src="http://ics314f13.files.wordpress.com/2013/08/checkstyle-project-properties.png?w=300&#038;h=201" width="300" height="201" /></a></p>
+<h2>Configure editors</h2>
+<p>We never want tabs in our files.  We always want indentation to be two spaces.  The standard file width is 120 characters.  Here&#8217;s what you need to do to get that in Eclipse for the files we&#8217;ll be working on.</p>
+<p>In Eclipse | Preferences | General | Editors | Text Editors:</p>
+<ul>
+<li>Check &#8220;Insert spaces for tabs&#8221;</li>
+<li>Check &#8220;Show print margin&#8221;,  and set the print margin column to 120.</li>
+<li>Click &#8220;Apply&#8221;</li>
+</ul>
+<p>In Eclipse | Preferences | Ant | Editor | Formatter:</p>
+<ul>
+<li>Set Tab Size: to 2</li>
+<li>Uncheck &#8220;Use tab character instead of spaces&#8221;</li>
+<li>Set Maximum Line Width to 120.</li>
+<li>Click &#8220;Apply&#8221;.</li>
+</ul>
+<p>In Eclipse | Preferences | Web | CSS Files | Editor:</p>
+<ul>
+<li>Set Line Width to 120.</li>
+<li>Check &#8220;Indent using spaces&#8221;</li>
+<li>Set indentation size to 2.</li>
+<li>Click &#8220;Apply&#8221;.</li>
+</ul>
+<p>In Eclipse | Preferences | Web | HTML Files | Editor:</p>
+<ul>
+<li>Set Line Width to 120.</li>
+<li>Check &#8220;Indent using spaces&#8221;</li>
+<li>Set indentation size to 2.</li>
+<li>Click &#8220;Apply&#8221;.</li>
+</ul>
+<p>In Eclipse | Preferences | XML | XML Files | Editor:</p>
+<ul>
+<li>Set Line Width to 120.</li>
+<li>Check &#8220;Indent using spaces&#8221;</li>
+<li>Set indentation size to 2.</li>
+<li>Click &#8220;Apply&#8221;.</li>
+</ul>
+<p>Now click &#8220;OK&#8221; to exit the Preferences dialog.</p>
+<h2>Configure file associations</h2>
+<p>We want to make sure the right type of editor comes up when we double click on a file name in an Eclipse project.</p>
+<p>In Eclipse | General | Editors | File Associations:</p>
+<ul>
+<li>Select the &#8220;*.html&#8221; file type in the upper window, then select &#8220;HTML Editor&#8221; in the lower window and click &#8220;Default&#8221;.</li>
+<li>Click &#8220;Add&#8221;, type &#8220;*.xml&#8221; as the file type, click &#8220;OK&#8221;.  In the lower window, select &#8220;XML Editor&#8221; and click &#8220;Default&#8221;.</li>
+<li>Click &#8220;Add&#8221;, type &#8220;*.md&#8221; as the file type, click &#8220;OK&#8221;.  In the lower window, click &#8220;Add&#8221;, select &#8220;Text Editor&#8221;, and click &#8220;OK&#8221;.</li>
+</ul>
+<h2>Enable &#8220;refresh using native hooks&#8221;</h2>
+<p>During Fall, 2013, we found that Play Framework integration with Eclipse was dramatically improved if the workspace option &#8220;Refresh using native hooks&#8221; was enabled.   Find this under General | Workspace, and enable it as shown below:</p>
+<p><a href="http://ics314f13.files.wordpress.com/2013/08/refresh-using-native-hooks.png"><img class="alignnone size-large wp-image-928" alt="refresh-using-native-hooks" src="http://ics314f13.files.wordpress.com/2013/08/refresh-using-native-hooks.png?w=604&#038;h=529" width="604" height="529" /></a></p>
+<h2>Eclipse hacks (experts only)</h2>
+<p>If you want to get into more advanced Eclipse hacking, here are some posts to look at.  Novices beware!</p>
+<ul>
+<li><a href="http://blog.scramcode.com/post/4/6-tips-to-make-eclipse-lighter-prettier-and-more-efficient/">Six tips to make Eclipse lighter, prettier, and more efficient</a></li>
+<li><a href="http://stackoverflow.com/questions/316265/tricks-to-speed-up-eclipse">Tricks to speed up Eclipse</a></li>
+</ul>
+<p>The tips that made a difference for me:</p>
+<ul>
+<li>In Eclipse | General | Startup and Shutdown, unselect &#8220;Marketplace Client&#8221; and &#8220;Equinox Provisioning Platform Automatic Update Support&#8221; from the plugins activated on startup.  That reduced my startup time from 10 seconds to 7 seconds.</li>
+<li>In my eclipse.ini file, I changed -Xms from 40m to 512m.  This allocates much more memory to Eclipse on startup by default. Reduced my startup time by about a second.</li>
+</ul>
+<h2>Verify reasonable startup time</h2>
+<p>You must configure your environment so that Eclipse boots in less than 10 seconds.</p>
+<p>If Eclipse takes more than 10 seconds to start up after a cold boot of your OS, the most <span style="line-height:1.5;">likely problem (if your laptop satisfies the class requirements) is that you have</span><br />
+antivirus software installed and you have enabled scanning of compressed files. Note that <span style="line-height:1.5;">Eclipse loads a great number of compressed (jar) files. If you have antivirus software </span><span style="line-height:1.5;">installed that scans compressed files when loaded, the startup time for Eclipse will be </span><span style="line-height:1.5;">intolerable. To fix this, configure your anti-virus software to not check compressed files from any Eclipse-related directories).</span></p>
+											</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+											</footer><!-- .entry-meta -->
+				</article><!-- #post -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			
+</div><!-- #comments -->			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			<div class="site-info">
+				<a href="http://theme.wordpress.com/themes/twentythirteen/" title="Learn more about this theme">The Twenty Thirteen Theme</a>.				<a href="http://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com</a>.
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201421x'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-content/js/devicepx.js,/wp-content/themes/pub/twentythirteen/js/functions.js?m=1399919068j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "ics314f13.wordpress.com";
+	</script>
+	<script type="text/javascript" src="http://s.skimresources.com/js/725X1342.skimlinks.js"></script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'56223803','v':'wpcom','tz':'-10','user_id':'0','post':'113','subd':'ics314f13'});
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1LVmwrVi5vQS5fVFtfdHBbPyw1VXIrU3hWLHhzVndTdktBX0ddJnpXRjVaOTd6fj1YMX4ydzR6MmRCYnxkNmcuSzEucHRfYlB5dVlhMGUvM3luMnRzWmlhbj16WDNxYUV1JU1fT1VQb25CZ0lQWUN1UVQ5amIlQlswWldZTmM5V19yalZtYTUmW2xOfl1RNXEsdGNEJS58aDJbT1d1X1E9Yl8mR2xHSmV3ci9TS35hUk8sUzlMdl8wZ0JyZmRDRURFWjNXM28mU3hYLG4rZXklejRVW01YLUhjejYmQUdneEY2QUI9R24='});
+addLoadEvent(function(){linktracker_init('56223803',113);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>
