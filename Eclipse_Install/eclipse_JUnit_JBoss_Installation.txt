@@ -1,0 +1,27 @@
+INSTALLATION OF JUNIT
+•	Using JUnit integrated into Eclipse
+Eclipse allows you to use the version of JUnit which is integrated in Eclipse. If you use Eclipse, no additional setup is required. In this case you can skip the following section.
+•	Downloading the JUnit library (http://junit.org/)
+If you want to control the used JUnit library explicitly, download JUnit4.x.jar from the following JUnit website. The download contains the junit-4.*.jar which is the JUnit library. Add this library to your Java project and add it to the classpath.
+
+
+Installing JBOSS
+
+Find the stable version of the hibernate plugin (Zip or URL for auto update) in the below URL. http://www.jboss.org/tools/download or you can also view the installation page on the Eclipse Marketplace
+Otherwise most convenient and safest way is to use JBoss update site within Eclipse software updates (Help -> Software Updates... -> Add Site...):
+The latest stable release update site for JBoss Tools (http://download.jboss.org/jbosstools/updates/stable/)
+There you can find Hibernate tools together with other handy JBoss plugins.
+Do not install everything though. You just need:
+•	The entire All JBoss Tools 3.2.0 section
+•	Hibernate Tools (HT) from Application Development
+•	HT from Data Services
+•	JBoss Maven Hibernate Configurator from Maven Support and
+•	HT from Web and Java EE Development
+That's all!
+In 2013, you will be probably using the latest versions of Eclipse and Hibernate. For Eclipse-4.2.2. and JBoss Tools 4.0 you need:
+•	From the Abridged JBoss Tools 4.0, the JBoss Hibenate Tools section
+•	Hibernate Tools (HT) from Application Development
+•	HT from JBoss Data Services
+•	JBoss Maven Hibernate Configurator from Maven Support and
+•	HT from Web and Java EE Development
+Then you are ready to go!
